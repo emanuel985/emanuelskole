@@ -1,0 +1,7 @@
+hello: hello.o
+	@echo "Creating executable"
+	@g++ -o hello hello.o
+
+hello.o: hello.cpp
+	@echo "Compiling hello.cpp"
+	@g++ -c hello.cpp
